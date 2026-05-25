@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  ULTIMO-ARTIGO.HTML
+  ============================================================
+  Esta página é usada pelo aplicativo mobile NexEmpreende para
+  saber qual é o ARTIGO MAIS RECENTE publicado no site.
+
+  COMO ATUALIZAR (quando publicar um novo artigo):
+  1. Atualize os campos meta abaixo (title, description, og:image).
+  2. Atualize os dados <meta name="latest-*"> — o app lê eles.
+  3. Atualize o <a id="latest-link"> e a tag <script type="application/json">.
+  4. Faça commit no GitHub. O app passa a apontar para o novo artigo.
+  ============================================================
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Como organizar as finanças do seu negócio em 5 passos — NexEmpreende</title>
+  <meta name="description" content="Último artigo publicado no NexEmpreende." />
+
+  <!-- ==== DADOS LIDOS PELO APP MOBILE ==== -->
+  <meta name="latest-title" content="Como organizar as finanças do seu negócio em 5 passos" />
+  <meta name="latest-description" content="Guia prático para sair do caos financeiro em 5 passos simples." />
+  <meta name="latest-image" content="images/article-1.jpg" />
+  <meta name="latest-url" content="articles/financas-em-5-passos.html" />
+  <meta name="latest-date" content="2026-05-23" />
+
+  <!-- ==== JSON estruturado (alternativa fácil de parsear) ==== -->
+  <script type="application/json" id="latest-article-data">
+  {
+    "title": "Como organizar as finanças do seu negócio em 5 passos",
+    "description": "Guia prático para sair do caos financeiro em 5 passos simples.",
+    "image": "images/article-1.jpg",
+    "url": "articles/financas-em-5-passos.html",
+    "date": "2026-05-23",
+    "category": "Finanças",
+    "readingTime": "7 min"
+  }
+  </script>
+
+  <meta http-equiv="refresh" content="0; url=articles/financas-em-5-passos.html" />
+  <link rel="canonical" href="articles/financas-em-5-passos.html" />
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div style="min-height:100vh;display:grid;place-items:center;font-family:sans-serif;padding:24px;text-align:center">
+    <div>
+      <p style="color:#475569;margin-bottom:16px">Redirecionando para o último artigo…</p>
+      <a id="latest-link" href="articles/financas-em-5-passos.html"
+         style="color:#2563eb;font-weight:600">Como organizar as finanças do seu negócio em 5 passos →</a>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<!--
+  ============================================================
+  NexEmpreende — TEMPLATE DE ARTIGO
+  ============================================================
+  Como criar um novo artigo:
+  1. Copie este arquivo dentro da pasta /articles
+  2. Renomeie (ex: meu-novo-artigo.html)
+  3. Atualize todos os trechos marcados como [EDITAR]
+  4. Para que ele apareça em /artigos.html, adicione um novo
+     <article class="article-card"> no grid de artigos.
+  5. Se for o artigo mais recente, atualize também o arquivo
+     /ultimo-artigo.html (basta apontar para este link).
+  ============================================================
+-->
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- [EDITAR] Título do artigo -->
+  <title>Título do Artigo — NexEmpreende</title>
+
+  <!-- [EDITAR] Descrição curta para SEO (até 160 caracteres) -->
+  <meta name="description" content="Descrição curta do artigo aqui." />
+  <meta name="author" content="NexEmpreende" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Título do Artigo" />
+  <meta property="og:description" content="Descrição curta do artigo aqui." />
+  <meta property="og:image" content="../images/article-1.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="../images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="../index.html" class="logo"><span class="logo-mark">N</span>NexEmpreende</a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../artigos.html" class="active">Artigos</a></li>
+          <li><a href="../contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta"><a href="../index.html#download" class="btn btn-primary">Baixar app</a></div>
+      <button class="menu-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <section class="article-hero">
+    <div class="article-wrap">
+      <a href="../artigos.html" class="back-link">← Voltar para artigos</a>
+      <!-- [EDITAR] Categoria -->
+      <span class="tag">Categoria</span>
+      <!-- [EDITAR] Título -->
+      <h1>Título do Artigo</h1>
+      <!-- [EDITAR] Data e tempo de leitura -->
+      <p class="meta">Publicado em DD de mês de AAAA · X min de leitura</p>
+    </div>
+  </section>
+
+  <!-- [EDITAR] Imagem de capa -->
+  <div class="article-cover">
+    <img src="../images/article-1.jpg" alt="Imagem de capa do artigo" />
+  </div>
+
+  <article class="article-body">
+    <div class="article-wrap">
+      <!-- [EDITAR] Conteúdo do artigo -->
+      <p>Parágrafo de introdução do artigo.</p>
+
+      <h2>Subtítulo H2</h2>
+      <p>Texto da seção.</p>
+
+      <h3>Subtítulo H3</h3>
+      <p>Texto da subseção.</p>
+
+      <ul>
+        <li>Item de lista</li>
+        <li>Outro item</li>
+      </ul>
+
+      <blockquote>Citação ou destaque importante do artigo.</blockquote>
+
+      <h2>Conclusão</h2>
+      <p>Encerramento do artigo com uma chamada para ação.</p>
+
+      <p style="margin-top:32px">
+        <a href="../index.html#download" class="btn btn-primary">Baixar o app NexEmpreende</a>
+      </p>
+    </div>
+  </article>
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo"><span class="logo-mark">N</span> NexEmpreende</div>
+          <p>Conteúdo, tecnologia e ferramentas para impulsionar microempreendedores.</p>
+        </div>
+        <div class="footer-col"><h5>Navegação</h5><ul>
+          <li><a href="../index.html">Home</a></li><li><a href="../sobre.html">Sobre</a></li>
+          <li><a href="../artigos.html">Artigos</a></li><li><a href="../contato.html">Contato</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Plataforma</h5><ul>
+          <li><a href="../index.html#download">Baixar app</a></li>
+          <li><a href="../ultimo-artigo.html">Último artigo</a></li>
+        </ul></div>
+        <div class="footer-col"><h5>Contato</h5><ul>
+          <li><a href="../contato.html">WhatsApp</a></li><li><a href="../contato.html">E-mail</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> NexEmpreende. Todos os direitos reservados.</span>
+        <span>Feito com 💙 para microempreendedores</span>
+      </div>
+    </div>
+  </footer>
+  <script src="../js/main.js"></script>
+</body>
+</html>
