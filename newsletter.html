@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Newsletter NexEmpreende — Conteúdo semanal para empreender e crescer</title>
+  <meta name="description" content="Assine a Newsletter NexEmpreende e receba semanalmente dicas práticas de marketing, vendas, tecnologia, produtividade e gestão para empreendedores." />
+  <meta name="keywords" content="newsletter, empreendedorismo, marketing, vendas, produtividade, NexEmpreende" />
+  <meta name="author" content="NexEmpreende" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Newsletter NexEmpreende" />
+  <meta property="og:description" content="Conteúdo semanal prático para empreendedores que querem crescer e gerar conexões." />
+  <meta property="og:image" content="images/hero.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/png" href="images/favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <!--
+        <span class="logo-mark">N</span>-->
+        <img
+          src="./images/logo.png"
+          width="40px"
+          height="auto"
+        />
+        NexEmpreende
+      </a>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="artigos.html">Artigos</a></li>
+          <li><a href="newsletter.html" class="active">Newsletter</a></li>
+          <li><a href="contato.html">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="nav-cta"><a href="index.html#download" class="btn btn-primary">Baixar app</a></div>
+      <button class="menu-toggle" aria-label="Abrir menu"><span></span><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO NEWSLETTER -->
+  <section class="hero newsletter-hero" style="padding:140px 0 60px">
+    <div class="container">
+      <div class="newsletter-hero-grid">
+        <div class="reveal">
+          <span class="hero-eyebrow">Newsletter semanal</span>
+          <h1>Receba a <span class="accent">Newsletter NexEmpreende</span> direto no seu e-mail.</h1>
+          <p class="lead">
+            Toda semana, conteúdos práticos para empreendedores, profissionais e empresas
+            que querem crescer, criar conexões e gerar novas oportunidades de negócios.
+          </p>
+          <ul class="newsletter-bullets">
+            <li>📈 Marketing, vendas e gestão sem enrolação</li>
+            <li>🛠️ Ferramentas úteis, produtividade e tecnologia</li>
+            <li>💡 Insights sobre o mercado em linguagem direta</li>
+            <li>🚀 Novidades exclusivas do app NexEmpreende em primeira mão</li>
+          </ul>
+          <p class="newsletter-trust">Sem spam. Apenas conteúdo relevante. Cancele quando quiser.</p>
+        </div>
+
+        <div class="newsletter-card reveal">
+          <h2>Assine grátis</h2>
+          <p class="newsletter-card-sub">Junte-se aos primeiros membros da comunidade NexEmpreende, por apenas R$ 10,00.</p>
+
+          <form id="newsletter-form" class="newsletter-form" novalidate>
+            <label for="nl-name">Nome</label>
+            <input type="text" id="nl-name" name="name" placeholder="Como podemos te chamar?" autocomplete="name" />
+
+            <label for="nl-email">E-mail <span class="req">*</span></label>
+            <input type="email" id="nl-email" name="email" required placeholder="seu@email.com" autocomplete="email" />
+
+            <button type="submit" class="btn btn-primary btn-lg btn-full" id="nl-submit">
+              Quero receber a newsletter
+            </button>
+
+            <p class="newsletter-form-msg" id="nl-msg" role="status" aria-live="polite"></p>
+            <p class="newsletter-legal">
+              Ao se inscrever, você concorda em receber e-mails do NexEmpreende.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- O QUE VOCÊ RECEBE -->
+  <section>
+    <div class="container">
+      <div class="section-head reveal">
+        <h2>O que você vai receber</h2>
+        <p>Conteúdo curado, semana após semana, para quem quer empreender com mais clareza.</p>
+      </div>
+      <div class="features">
+        <article class="feature reveal">
+          <div class="feature-icon">📣</div>
+          <h3>Marketing & Vendas</h3>
+          <p>Estratégias acessíveis para atrair clientes, vender mais e fortalecer sua marca.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">⚙️</div>
+          <h3>Tecnologia & Ferramentas</h3>
+          <p>Apps, automações e recursos que economizam tempo e dinheiro no dia a dia.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">📊</div>
+          <h3>Gestão & Produtividade</h3>
+          <p>Métodos simples para organizar finanças, rotina e tomar decisões melhores.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">🔭</div>
+          <h3>Insights de mercado</h3>
+          <p>Tendências, oportunidades e movimentos do mercado explicados de forma direta.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">🎁</div>
+          <h3>Acesso antecipado</h3>
+          <p>Novidades do app NexEmpreende e oportunidades exclusivas para os primeiros membros.</p>
+        </article>
+        <article class="feature reveal">
+          <div class="feature-icon">🤝</div>
+          <h3>Conexões reais</h3>
+          <p>Comunidade de empreendedores e profissionais com objetivos parecidos com os seus.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="logo">
+            <img
+              src="./images/logo.png"
+              width="40px"
+              height="auto"
+            />
+            NexEmpreende
+          </div>
+          <p>Conteúdo, tecnologia e ferramentas para impulsionar microempreendedores e pequenos negócios.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Navegação</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="artigos.html">Artigos</a></li>
+            <li><a href="newsletter.html">Newsletter</a></li>
+            <li><a href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Plataforma</h5>
+          <ul>
+            <li><a href="index.html#download">Baixar app</a></li>
+            <li><a href="artigos.html">Conteúdos</a></li>
+            <li><a href="ultimo-artigo.html">Último artigo</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h5>Contato</h5>
+          <ul>
+            <li><a href="contato.html">WhatsApp</a></li>
+            <li><a href="contato.html">E-mail</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span id="year"></span> NexEmpreende. Todos os direitos reservados.</span>
+        <span>Feito com 💙 para microempreendedores</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>
+    // ============================================================
+    // Newsletter — Integração com o backend
+    // ------------------------------------------------------------
+    // Substitua NEWSLETTER_ENDPOINT pela URL do seu backend.
+    // O gatilho já está pronto: ao enviar o formulário é feito um
+    // POST com JSON { name, email, source } para o endpoint abaixo.
+    // ============================================================
+    const NEWSLETTER_ENDPOINT = "https://createnewslettercheckout-w3jj7oxnoa-uc.a.run.app";
+
+    const form = document.getElementById("newsletter-form");
+    const msg  = document.getElementById("nl-msg");
+    const btn  = document.getElementById("nl-submit");
+
+    function setMsg(text, type) {
+      msg.textContent = text;
+      msg.className = "newsletter-form-msg " + (type || "");
+    }
+
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const name  = document.getElementById("nl-name").value.trim();
+      const email = document.getElementById("nl-email").value.trim();
+
+      if (!email || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        setMsg("Por favor, informe um e-mail válido.", "error");
+        return;
+      }
+
+      btn.disabled = true;
+      const originalText = btn.textContent;
+      btn.textContent = "Enviando...";
+      setMsg("", "");
+
+      try {
+        const res = await fetch(NEWSLETTER_ENDPOINT, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({
+            name: name || null,
+            email: email
+          })
+        });
+
+        if (!res.ok) throw new Error("Falha na inscrição");
+
+        form.reset();
+        setMsg("✅ Inscrição confirmada! Em breve você receberá nossos conteúdos.", "success");
+      } catch (err) {
+        console.log("----------------------------")
+        console.log(err)
+        setMsg("⚠️ Não foi possível concluir agora. Tente novamente em instantes.", "error");
+      } finally {
+        btn.disabled = false;
+        btn.textContent = originalText;
+      }
+    });
+  </script>
+</body>
+</html>
