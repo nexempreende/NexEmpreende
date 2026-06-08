@@ -231,6 +231,13 @@
 
         if (!res.ok) throw new Error("Falha na inscrição");
 
+        const data = await res.json();
+
+        if (data.checkoutUrl) {
+          window.location.href = data.checkoutUrl;
+          return;
+        }
+
         form.reset();
         setMsg("✅ Inscrição confirmada! Em breve você receberá nossos conteúdos.", "success");
       } catch (err) {
